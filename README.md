@@ -28,4 +28,11 @@ Give a ⭐️ if this project helped you!
 
 ***
 
+## Trello
+
 Trello: https://trello.com/b/EOKJsem4/proyecto-animeflix
+
+## API to Fetching
+
+- https://docs.api.jikan.moe/#section/Information
+- https://docs.api.jikan.moe/#tag/anime
