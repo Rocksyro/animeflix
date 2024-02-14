@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 //Pasamos por parámetro la url para poder hacer fetch a distintos endpoints
 export function useFetch(url) {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState({});
 
 //Agregar un estado que controle si la petición se está realizando o finalizó
     const [loading, setLoading] = useState(true);
@@ -20,6 +20,6 @@ export function useFetch(url) {
             .finally(()=> setLoading(false));
 
         return () => abortController.abort();
-    }, []);
+    }, [url]);
     return {data, loading, error};
 }
