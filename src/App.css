@@ -1,6 +1,10 @@
 :root {
   /* Definir variables para los colores  */
   --main--bg-color: #242424;
+  --text-color: #929392;
+  --text-secondary: #fff;
+  --orange-color: #F57422;
+
 }
 
 * {
@@ -11,6 +15,8 @@
 
 body {
   background-color: var(--main--bg-color);
+  font-family:  Lato, "Helvetica Neue", helvetica, sans-serif;
+  color: var(--text-color);
 }
 
 ul {
