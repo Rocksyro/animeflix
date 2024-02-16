@@ -1,5 +1,5 @@
 import React from 'react';
-import { useFetch } from '../../useFetch';
+import { useFetch } from '../../hooks/useFetch';
 
 const Card = () => {
   // https://api.jikan.moe/v4/anime/{id}
@@ -17,9 +17,9 @@ const Card = () => {
       setShowData(data)
   })
 },[]); */
-if (loading) return <p>Loading...</p>;
-if (error) return <p>{error}</p>;
-return (
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>{error}</p>;
+  return (
     <div className="card">
       <img src={data.data?.images.jpg.image_url} alt="Anime Poster" />
       <h3>{data.data?.title}</h3>
