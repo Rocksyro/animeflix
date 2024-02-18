@@ -1,1 +1,54 @@
-/* Lato, "Helvetica Neue", helvetica, sans-serif */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 75px;
+}
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.burger{
+    color: #DADADA;
+    margin-right: 40px;
+    height: inherit;
+}
+.logo{
+    fill: #f47521;
+    transition: fill .2s ease;
+    display: block;
+    height: inherit;
+    width: 27px;
+}
+.logo:hover{
+    fill: #fff;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right svg{
+    margin: 15px;
+    color: #DADADA;
+}
+.crown{
+    color: #FBB919 !important;
+    fill: #FBB919;
+}
+
+
+
+
+
+.desktop-logo{
+    width: 25px;
+    fill: #f47521;
+    transition: fill .2s ease;
+    display: none;
+}
+.desktop-logo:hover{
+    fill: #fff;
+}

@@ -1,0 +1,49 @@
+footer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+footer div{
+    display: flex;
+    align-items: baseline;
+    justify-content:space-between;
+    margin: 20px;
+    line-height: 2;
+
+}
+div p{
+    color: var(--text-secondary);
+    font-size: 16px;
+    width: 50%;
+}
+div li{
+    font-size: 14px;
+}
+div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+}
+hr{
+    margin: 0 20px;
+    border-color: var(--text-color);
+}
+.crown{
+    color: var(--yellow-color);
+    fill: var(--yellow-color);
+}
+.free{
+    color: var(--yellow-color);
+}
+.last{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.last img{
+    width: 30%;
+}

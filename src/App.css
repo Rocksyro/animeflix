@@ -5,18 +5,18 @@
   --text-secondary: #fff;
   --text-black: #141519;
   --orange-color: #f47521;
-
+  --yellow-color: #FBB919;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Lato, "Helvetica Neue", helvetica, sans-serif;
 }
 
 body {
   background-color: var(--main--bg-color);
-  font-family: Lato, "Helvetica Neue", helvetica, sans-serif;
   color: var(--text-color);
 }
 
