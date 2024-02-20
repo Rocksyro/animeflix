@@ -1,33 +1,41 @@
 footer{
     margin-top: 40px;
+}
+.container{
     display: flex;
     flex-direction: column;
-}
-footer div{
-    display: flex;
     align-items: baseline;
     justify-content:space-between;
     margin: 20px;
     line-height: 2;
-
+    width: 100%;
 }
-div p{
+.nav{
+    width: 90%;
+    display: flex;
+}
+.nav h4{
     color: var(--text-secondary);
     font-size: 16px;
     width: 50%;
+    font-weight:400;
+    margin-left: 1rem;
 }
-div li{
+.nav li{
     font-size: 14px;
 }
-div ul{
+.nav ul{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
 }
 hr{
-    margin: 0 20px;
+    align-self: normal;
+    width: 90%;
+    margin: 20px 15px;
     border-color: var(--text-color);
+    opacity:  .3;
 }
 .crown{
     color: var(--yellow-color);
@@ -43,7 +51,57 @@ hr{
     justify-content: center;
     align-items: center;
     font-size: 13px;
+    padding-bottom: 10px;
+    margin-bottom: 1rem;
 }
 .last img{
     width: 30%;
+    margin-bottom: 1rem;
+}
+.final{
+    display: none;
+}
+
+@media (min-width: 568px) {
+    .container{
+        flex-direction: row;
+        width: 100%;
+        padding: 2.5rem;
+        margin-left: 0;
+        justify-content: space-around
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-size: .875rem;
+        flex: 0 0 33.33%;
+        --line-height: 1.125rem;
+        
+    }
+    .nav h4{
+        margin-left: 0%;
+    }
+    .nav ul{
+        width: 90%;
+    }
+    hr{
+        display:none;
+    }
+    .last{
+        align-self: baseline;
+    }
+    .free{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.123rem;
+    }
+    .crown{
+        margin-right: 2px;
+    }
+    .final{
+        display: block;
+    }
+
 }

@@ -22,33 +22,57 @@
     width: 27px;
 }
 .logo:hover{
-    fill: #fff;
+    fill: #ffffff;
 }
-.right{
+.header-actions{
     width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.right svg{
+.header-actions svg{
     margin: 15px;
     color: #DADADA;
 }
 .crown{
-    color: #FBB919 !important;
+    color: var(--yellow-color)!important;
     fill: #FBB919;
 }
-
-
-
-
-
 .desktop-logo{
-    width: 25px;
-    fill: #f47521;
-    transition: fill .2s ease;
     display: none;
 }
-.desktop-logo:hover{
-    fill: #fff;
+.premium-link{
+    display: flex;
 }
+.premium-text{
+    display: none;
+}
+
+@media (min-width:568px) {
+    .desktop-logo{
+        width: 180px;
+        fill: #f47521;
+        transition: fill .2s ease;
+        display: block;
+    }
+    .desktop-logo:hover{
+        fill: #fff;
+    }
+    .logo{
+        display: none;
+    }
+    .premium-text{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+        justify-content: center;
+        color: var(--text-secondary);
+    }
+    .gold{
+        color: var(--yellow-color);
+    }
+
+}
+
+

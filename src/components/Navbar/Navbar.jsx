@@ -5,6 +5,7 @@ import { TbCrown } from "react-icons/tb";
 import { IoIosSearch } from "react-icons/io";
 import { AiOutlineUser } from "react-icons/ai";
 import  './Navbar.css';
+import desktopLogo  from '../../assets/images/desktop-logo.svg';
 
 export const Navbar = () => {
     return (
@@ -12,6 +13,7 @@ export const Navbar = () => {
             <div className='left'>
                 <RxHamburgerMenu className='burger' size={30} />
                 <img src={logo}  alt="Logo" className='logo'/>
+                <img src={desktopLogo}  alt="Logo" className='desktop-logo'/>
 {/*
                 <svg className='logo'>
                 <path d="M19.125 13.914a3.804 3.804 0 0 1-1.292-7.385 8.357 8.357 0 0 0-12.243 7.4 8.357 8.357 0 0 0 8.357 8.357 8.357 8.357 0 0 0 8.217-9.888 3.8 3.8 0 0 1-3.04 1.516M11.893 0C5.325 0 0 5.325 0 11.892c0 6.569 5.325 11.893 11.892 11.893.273 0 .542-.01.809-.027-5.476-.33-9.817-4.873-9.817-10.433 0-5.773 4.68-10.453 10.454-10.453 5.527 0 10.051 4.29 10.427 9.72.013-.231.02-.464.02-.7C23.785 5.325 18.461 0 11.892 0"></path>
@@ -21,8 +23,15 @@ export const Navbar = () => {
                 </svg>
 */}
             </div>
-            <div className='right'>
-                <TbCrown className='crown' size={27}/>
+            <div className='header-actions'>
+                <div className='premium-link'>
+                    <TbCrown className='crown' size={27}/>
+                    <div className='premium-text'>
+                        <span className='gold'>PROBAR GRATIS </span>
+                        <span>PREMIUM</span>                   
+                    </div>
+                </div>
+                
                 <IoIosSearch size={25}/>
                 <AiOutlineUser size={25}/>
             </div>
