@@ -12,7 +12,7 @@ import { useFetch } from '../../hooks/useFetch';
 export const Slide = () => {
     const { data, loading, error } = useFetch('https://api.jikan.moe/v4/anime')
 
-    console.log(data);
+    //console.log(data);
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>{error}</p>;
