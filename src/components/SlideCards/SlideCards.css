@@ -1,0 +1,43 @@
+.container{
+    padding: 0%;
+    margin-left: 0%;
+    max-height: 20% !important;
+}
+.headers{
+    margin-left: 1rem;
+}
+.title{
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.subtitle{
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0% !important;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    
+}
+.swiper-button-prev, .swiper-button-next {
+    color: var(--text-secondary)  !important;
+    height:  20% !important;
+    top: 50%  !important ;
+}

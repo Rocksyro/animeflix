@@ -1,6 +1,7 @@
 :root {
   /* Definir variables para los colores  */
-  --main--bg-color: #242424;
+  --main--bg-color: #000000;
+  --navbar-color:#242424;
   --text-color: #929392;
   --text-secondary: #fff;
   --text-black: #141519;

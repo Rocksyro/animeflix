@@ -9,7 +9,7 @@ import sonyLogo from '../../assets/images/sony_pictures_logo.png'
 export const Footer = () => {
     return (
         <footer>
-            <div className='container'>
+            <div className='container-footer'>
                 <div className='nav'>
                     <h4>Navegación</h4>
                     <ul>

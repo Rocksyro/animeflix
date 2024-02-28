@@ -1,0 +1,27 @@
+.card{
+    margin: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+}
+
+img{
+    margin-bottom: 5px;
+    align-self: center;
+    object-fit: cover;
+}
+
+h3{
+    color: var(--text-secondary);
+    font-weight: 300;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1rem;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: left;
+}

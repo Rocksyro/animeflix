@@ -1,7 +1,7 @@
 footer{
     margin-top: 40px;
 }
-.container{
+.container-footer{
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -43,6 +43,8 @@ hr{
 }
 .free{
     color: var(--yellow-color);
+    display: flex;
+    align-items: center;
 }
 .last{
     width: 100%;
@@ -63,7 +65,7 @@ hr{
 }
 
 @media (min-width: 568px) {
-    .container{
+    .container-footer{
         flex-direction: row;
         width: 100%;
         padding: 2.5rem;
@@ -92,9 +94,6 @@ hr{
         align-self: baseline;
     }
     .free{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         line-height: 1.123rem;
     }
     .crown{
