@@ -2,16 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar, FreeMode, Navigation } from 'swiper/modules';
 import Card from '../Card/Card';
-import * as API from '../../services/apiService';
 import './SlideCards.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export function SlideCards() {
+export function SlideCards({getAnime}) {
     const [anime, setAnime] = useState({});
     useEffect(() => {
-        API.getTopAnime().then(setAnime)
+        getAnime().then(setAnime)
     }, []);
 
     return (
@@ -29,7 +28,6 @@ export function SlideCards() {
                     modules={[Scrollbar, FreeMode, Navigation]}
                     className="mySwiper"
                 >
-
                     <div className="slide-cards" >
                         {anime.data?.map((singleAnime) => (
                             <SwiperSlide key={singleAnime.mal_id}>

@@ -39,6 +39,17 @@ export async function getEpisode(id, episode) {
         console.error(error)
     }
 }
+
+export async function getTopCharacters() {
+    try{
+        const response = await fetch(`${API_URL}/watch/promos/popular`);
+        const data = await response.json();
+        return data;
+    }catch(error){
+        console.error(error)
+    }
+}
+
 /*
 /top/characters
 /anime/{id}/pictures
