@@ -1,15 +1,24 @@
-.swiper {
-    width: 100%;
-    height: 100%;
+.mySwiper{
+    display: flex;
+    justify-content: end;
 }
-
-.swiper-slide {
+.swiper__group{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-left:  20px;
+    width: 100%;
+    height: 450px;
 }
 
-/* Agregar estilos  */
+.swiper__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 5;
+    margin-left: 15px;
+}
+
 .swiper__title {
     color: white
 }
@@ -22,7 +31,7 @@
     text-overflow: ellipsis;
 }
 
-.swipper__btn__group {
+.swipper__btn__content {
     display: flex;
     margin: 10px 0;
 }
@@ -49,8 +58,7 @@
     background-color: transparent;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 20%;
-    object-fit: cover;
+.swiper__img {
+    object-fit: contain;
+    max-width: 1400px;
 }
