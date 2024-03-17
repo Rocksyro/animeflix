@@ -3,6 +3,7 @@ import { FiBookmark, FiPlay } from "react-icons/fi";
 
 export const CallToActionCard = ({ data }) => {
   const { title, synopsis, images } = data;
+  const img = images.jpg.image_url;
   return (
     <div className="swiper__group">
       <div className="swiper__content">
@@ -17,7 +18,7 @@ export const CallToActionCard = ({ data }) => {
           </button>
         </div>
       </div>
-      <img className="swiper__img" src={images.jpg.image_url} alt={title} />
+      <img className="swiper__img" src={img} alt={title} />
     </div>
   );
 };
